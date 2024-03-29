@@ -256,6 +256,53 @@ The pipeline generates graphs and information about each step of the analysis as
     - Load R libraries and install PheWAS if not already installed.
     - Read data produced from Python and perform PheWAS analysis with covariates.
     - Generate Manhattan plots for visualization.
+## All Of Us Helping Information
+
+### Creating Cohort
+
+#### 1st Step
+
+Choose what our Data Set should have. For example:
+- Contains EHR Data Code
+- Short Read WGS
+
+If you want to exclude a characteristic or specific type of people in the dataset, use the second column.
+
+#### 2nd Step
+
+We need to Create a concept:
+1. Press the + to start the process of creating a Dataset.
+2. Select Concept sets.
+3. Then you can choose your filters and the information that your data should have.
+4. Choose the Disease that we want these datasets to have or specific characteristics about the population. Then we must Save the Concept Set to use it also in the future. We have 2 choices to create a new Description or upload an old one. First, we need to add, for example, conditions:
+   - We can create a new set with a Description of the conditions that we removed and what is the target of this experiment.
+   - Or we can update an old one.
+
+#### 3rd Step
+
+We need to create a Dataset.
+- Choose the specific Cohort that we created or All Participants (Default cohort).
+- Then choose the Concepts Sets. Here is the place that we pull information about the patients. As you can see in the picture, we can create a concept by choosing all the diseases or the Zip-Code data.
+- Also, we have to pick what columns we want to have in the Dataframe that we will download inside the Jupiter Notebook. It is easier to press "View Preview Table" so that we understand what the data are. Also, the columns that we don't want to use can be unchecked.
+- Next, we must Create the Dataset:
+    - Choose a Name and give some Description.
+
+#### 4th Step
+
+If this is the first Jupiter notebook, then choose the language and the type of notebook, the name and then export the Notebook.
+
+Tip: If you already have a Jupiter Notebook, then it is best to take the SQL command to pull the data that you want:
+- Then you can Copy the SQL command to your Jupiter Notebook.
+
+And with this, you will Create a Dataframe to do your analysis.
+
+### Creating a Cloud Environment
+
+
+To read the data frames at the Python Pipeline without crashing the virtual environment, you need at least 16 CPUs and 104 RAM. The RAM that we have in this option we cannot run the R PheWAS, but we can program and do Data Analysis.
+
+If we want to have an environment to run the Python Pipeline and the R pipeline, then we need at least 32 CPUs, 208 RAM, or 64 CPUs and 416 (even better) GB RAM:
+
 
 
 ## References
