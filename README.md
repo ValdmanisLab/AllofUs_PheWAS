@@ -301,7 +301,7 @@ And with this, you will Create a Dataframe to do your analysis.
 
 To read the data frames at the Python Pipeline without crashing the virtual environment, you need at least 16 CPUs and 104 RAM. The RAM that we have in this option we cannot run the R PheWAS, but we can program and do Data Analysis.
 
-If we want to have an environment to run the Python Pipeline and the R pipeline, then we need at least 32 CPUs, 208 RAM, or 64 CPUs and 416 (even better) GB RAM:
+If we want to have an environment to run the Python Pipeline and the R pipeline, then we need at least 64 CPUs and 416 GB RAM:
 
 
 
